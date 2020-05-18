@@ -1,0 +1,9 @@
+.container{
+    border: 10px solid #fff;
+}
+
+@media all and (min-width: 768px){
+    .container{
+        border: 20px solid #fff;
+    }
+}

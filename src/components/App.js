@@ -1,12 +1,12 @@
 import React from 'react';
 import Header from './Header'
-import Banner from './Banner';
+import Banner from './Banner/Banner';
 import Footer from './Footer';
 import '../styles.scss';
 
 const App = () => {
     return(
-        <div>
+        <div className="container">
             <Header />
             <Banner />
             <Footer />
