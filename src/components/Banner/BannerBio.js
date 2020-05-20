@@ -2,7 +2,7 @@ import React from 'react';
 
 const BannerBio = ({ text }) => {
     return(
-        <p className="banner_bio">{text}</p>
+        <h2 className="banner_bio">{text}</h2>
     )
 }
 
