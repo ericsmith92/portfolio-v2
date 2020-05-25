@@ -7,13 +7,13 @@ const Work = () => {
             <div className="work_inner">
                 <div className="row">
                     <div className="col-1-of-3">
-                        <Card />
+                        <Card src='http://localhost:3000/covid-19-tracker-sm.png' />
                     </div>
                     <div className="col-1-of-3">
-                        <Card />
+                        <Card src='http://localhost:3000/instapaper-sm.png'  />
                     </div>
                     <div className="col-1-of-3">
-                        <Card />
+                        <Card src='http://localhost:3000/instapaper-search.png'  />
                     </div>
                 </div>
             </div>
