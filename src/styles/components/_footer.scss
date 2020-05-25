@@ -16,7 +16,7 @@
             a{
                 transition: all 0.5s ease;
                 &:hover{
-                    color: #00ba50;
+                    color: $green_primary;
                 }
             }
 
@@ -27,6 +27,7 @@
         font-size: 14px;
         font-weight: 600;
         letter-spacing: 0.5px;
+        color: #000;
 
         i{
             background: linear-gradient(-90deg,#8d0b0b, #f21111);

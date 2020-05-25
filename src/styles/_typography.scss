@@ -19,7 +19,7 @@ html{
         letter-spacing: 0.64px;
         line-height: 38.4px;
         text-transform: none;
-        color: #29007A;
+        color: $heading_colour
     }
     
     //sub heading
@@ -30,7 +30,7 @@ html{
         letter-spacing: 0.384px;
         line-height: normal;
         text-transform: none;
-        color: #29007A;
+        color: $heading_colour
     }
 }
 
@@ -42,9 +42,9 @@ p{
     letter-spacing: 0.288px;
     line-height: 22.32px;
     text-transform: none;
-    color: #787676;
+    color: $text_colour
 }
 
 a{
-    color: #787676;
+    color: $text_colour
 }

@@ -1,7 +1,12 @@
+@import './styles/variables';
 @import './styles/normalize';
 @import './styles/typography';
+@import './styles/mixins';
+@import './styles/grid';
 @import './styles/components/container';
 @import './styles/components/header';
 @import './styles/components/banner';
 @import './styles/components/sections';
+@import './styles/components/work';
+@import './styles/components/card';
 @import './styles/components/footer';
