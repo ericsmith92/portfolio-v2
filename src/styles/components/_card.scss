@@ -31,5 +31,29 @@
 
     &_bottom{
         padding: 20px;
+        position: relative;
+
+        p{
+            line-height: 17px;
+        }
+    }
+
+    &_toggle{
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        cursor: pointer;
+
+        span{
+            display: block;
+            width: 4px;
+            height: 4px;
+            background-color: $heading_colour;
+            border-radius: 50%;
+
+            &:not(:last-of-type){
+                margin: 0 0 2px 0;
+            }
+        }
     }
 }
