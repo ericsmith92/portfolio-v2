@@ -1,5 +1,6 @@
 import React from 'react';
 import CardToggle from './CardToggle';
+import CardReveal from './CardReveal';
 
 class Card extends React.Component{
     
@@ -8,7 +9,11 @@ class Card extends React.Component{
     }
 
     toggleCardState = () =>{
-        this.setState({ active: true });
+        if(this.state.active){
+            this.setState({ active: false });
+        }else{
+            this.setState({ active: true });
+        }
     }
 
     render(){
@@ -19,7 +24,7 @@ class Card extends React.Component{
         } = this.props;
 
         return(
-            <div className='card'>
+            <div className={`card ${this.state.active ? 'active' : ''}`}>
                 <div className='card_top'>
                     <img className='card_img' src={src} alt='' title='' />
                 </div>
@@ -28,6 +33,7 @@ class Card extends React.Component{
                     <CardToggle toggleCardState={this.toggleCardState}/>
                     <p>{description}</p>
                 </div>
+                <CardReveal toggleCardState={this.toggleCardState}/>
             </div>
         )
     }

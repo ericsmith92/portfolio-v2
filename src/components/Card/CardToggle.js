@@ -14,4 +14,4 @@ class CardToggle extends React.Component{
     }
 }
 
-export default CardToggle
+export default CardToggle;
