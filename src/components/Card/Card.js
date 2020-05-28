@@ -21,7 +21,9 @@ class Card extends React.Component{
             src,
             title,
             description,
-            accomplishments
+            accomplishments,
+            githubURL,
+            projectURL
         } = this.props;
 
         return(
@@ -34,7 +36,7 @@ class Card extends React.Component{
                     <CardToggle toggleCardState={this.toggleCardState}/>
                     <p>{description}</p>
                 </div>
-                <CardReveal toggleCardState={this.toggleCardState} accomplishments={accomplishments}/>
+                <CardReveal toggleCardState={this.toggleCardState} accomplishments={accomplishments} githubURL={githubURL}  projectURL={projectURL}/>
             </div>
         )
     }
