@@ -8,27 +8,27 @@ const Work = () => {
                 <div className="row">
                     <div className="col-1-of-3">
                         <Card 
-                            src='http://localhost:3000/covid-19-banner.png' 
+                            src='/images/covid-19-banner.png' 
                             title='Covid-19 Tracker' 
                             description='Interact with countries on a map to retrieve Covid-19 data.'
                             accomplishments={['JAMstack project with React front-end', 'Error handling and displaying using React Portals', 'Dusted off some highschool math to derive lat and long from an XY coordinate on mouseclick']}
-                            githubURL='https://github.com/ericsmith92/portfolio-v2/'
+                            githubURL='https://github.com/ericsmith92/web-mercator/'
                             projectURL='https://ericsmith92.github.io/web-mercator/'
                             />
                     </div>
                     <div className="col-1-of-3">
                         <Card 
-                            src='http://localhost:3000/instapaper-banner.png'  
+                            src='/images//instapaper-banner.png'  
                             title='Instapaper' 
                             description='Rearrange and stitch together recent posts from an Instagram account to make a wallpaper.'
-                            accomplishments={['Web scraping with a Node JS backend', 'Dependency free JS front-end', 'Image writing, resizing, and stitching']}
+                            accomplishments={['Web scraping with a Node JS backend', 'Dependency free vanilla JavaScript front-end', 'Image writing, resizing, and stitching on the fly']}
                             githubURL='https://github.com/ericsmith92/instapaper'
                             projectURL='http://whispering-chamber-94643.herokuapp.com/'
                             />
                     </div>
                     <div className="col-1-of-3">
                         <Card 
-                            src='http://localhost:3000/instapaper-search.png' 
+                            src='/images/instapaper-search.png' 
                             title='Project 3' 
                             description='Lorem ipsum dolor sit amet, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
                             accomplishments={['Lorem ipsum dolor sit amet', 'sed do eiusmod tempor incididunt ut labore', ' incididunt ut labore et dolore magna aliqua']}/>
