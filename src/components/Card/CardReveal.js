@@ -4,7 +4,7 @@ import Highlighter from "react-highlight-words";
 const CardReveal = ({ toggleCardState, accomplishments,  githubURL, projectURL }) => {
     const keyWords = ['Node', 'Node JS', 'JavaScript', 'JAMstack', 'React', 'stitching'];
     const accomplishmentsList = accomplishments.map((text, index) => <li key={index}><Highlighter
-    highlightClassName="YourHighlightClass"
+    highlightClassName="card_reveal__mark"
     searchWords={keyWords}
     autoEscape={true}
     textToHighlight={text}
