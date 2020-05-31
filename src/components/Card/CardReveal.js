@@ -17,10 +17,10 @@ const CardReveal = ({ toggleCardState, accomplishments,  githubURL, projectURL }
            </div>
            <div className='card_reveal__footing'>
                 <a target="_blank" rel="noopener noreferrer" href={githubURL}>
-                    <i class="fa fa-github"></i>
+                    <i className="fa fa-github"></i>
                 </a>
                 <a target="_blank" rel="noopener noreferrer" href={projectURL}>
-                    <i class="fa fa-link"></i>
+                    <i className="fa fa-link"></i>
                 </a>
            </div>
        </div>
