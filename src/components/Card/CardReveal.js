@@ -1,8 +1,14 @@
 import React from 'react';
+import Highlighter from "react-highlight-words";
 
 const CardReveal = ({ toggleCardState, accomplishments,  githubURL, projectURL }) => {
-    
-    const accomplishmentsList = accomplishments.map((text, index) => <li key={index}>{text}</li>);
+    const keyWords = ['Node', 'Node JS', 'JavaScript', 'JAMstack', 'React', 'stitching'];
+    const accomplishmentsList = accomplishments.map((text, index) => <li key={index}><Highlighter
+    highlightClassName="YourHighlightClass"
+    searchWords={keyWords}
+    autoEscape={true}
+    textToHighlight={text}
+/></li>);
     //TODO: make a new component and wraps keywords in <strong></strong> tags
     return(
        <div className='card_reveal'>

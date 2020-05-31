@@ -168,6 +168,11 @@
                 }
             }
         }
+
+        mark{
+            background-color: $green_primary;
+            color: #fff;
+        }
     }
 
     &.active{
