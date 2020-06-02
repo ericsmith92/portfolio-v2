@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import Header from './Header'
 import Banner from './Banner/Banner';
 import About from './About';
@@ -7,9 +7,12 @@ import Footer from './Footer/Footer';
 import '../styles.scss';
 
 const App = () => {
+    
+    const [open, setOpen] = useState(false);
+
     return(
         <div className="container">
-            <Header />
+            <Header open={open} setOpen={setOpen} />
             <Banner />
             <About />
             <Work />
