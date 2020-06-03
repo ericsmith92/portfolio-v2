@@ -1,6 +1,7 @@
 .container{
     border: 10px solid #fff;
     position: relative;
+    overflow-x: hidden;
 }
 
 @media all and (min-width: 768px){

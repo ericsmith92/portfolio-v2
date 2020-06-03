@@ -6,9 +6,9 @@
     height: 100vh;
     text-align: left;
     padding: 0 20px;
-    position: fixed;
-    top: 10px;
-    right: 10px;
+    position: absolute;
+    top: 0;
+    right: 0;
     transform: translateX(calc(100% + 10px));
     transition: transform 0.3s ease-in-out;
     z-index: 3;
@@ -39,8 +39,6 @@
 
 @media all and (min-width: 768px){
     .menu{
-        top: 20px;
-        right: 20px;
         padding: 0 100px;
         transform: translateX(calc(100% + 20px));
     }   

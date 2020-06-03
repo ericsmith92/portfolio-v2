@@ -14,7 +14,6 @@ class Banner extends React.Component{
             .then(resp => resp.json())
             .then(json => {
                     this.setState({ me: json });
-                    console.log(this.state.me);
                 }
             )
             .catch(err => console.log(err));
