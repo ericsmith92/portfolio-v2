@@ -4,7 +4,6 @@
     cursor: pointer;
     padding: 10px 0 0 0;
 
-
     span{
         display: block;
         width: 100%;
@@ -16,6 +15,29 @@
             margin: 0 0 6px 0;
         }
     }
+
+    &.open{
+        position: relative;
+        z-index: 4;
+
+        span{
+            background-color: $green-primary;
+            margin: 0 !important;
+
+            &:nth-of-type(2){
+                display: none;
+            }
+
+            &:first-of-type{
+                transform: rotate(50deg);    
+            }
+
+            &:last-of-type{
+                transform: translate(-1px, -4px) rotate(-50deg);    
+            }
+        }
+    }
+
 }
 
 @media all and (min-width: 768px){

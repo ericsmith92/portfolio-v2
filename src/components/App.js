@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import Header from './Header'
+import Header from './Header';
 import Banner from './Banner/Banner';
 import About from './About';
 import Work from './Work';

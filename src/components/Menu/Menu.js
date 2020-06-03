@@ -1,8 +1,8 @@
 import React from 'react';
 
-const Menu = () => {
+const Menu = ({open}) => {
     return(
-        <nav>
+        <nav className={`menu ${open ? 'open' : ''}`}>
             <a href='/'>
                 Top
             </a>

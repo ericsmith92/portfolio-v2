@@ -1,5 +1,6 @@
 import React from 'react';
 import Burger from './Burger/Burger';
+import Menu from './Menu/Menu';
 
 const Header = ({open, setOpen}) => {
     return(
@@ -8,6 +9,7 @@ const Header = ({open, setOpen}) => {
                 ES
             </a>
             <Burger open={open} setOpen={setOpen} />
+            <Menu open={open} />
         </header>
     ) 
 }
