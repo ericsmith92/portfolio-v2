@@ -120,41 +120,45 @@
                 position: relative;
 
                 &:before{
-                    display: block;     
+                    content: '';
+                    display: block;
+                    width: 0;
                     opacity: 0;
                     position: absolute;
                     font-size: 12px;
                     color: #fff;
-                    background: $text_colour;
-                    top: -30px;
-                    left: -5px;
+                    background: #2b2a2a;
+                    top: 0;
+                    left: 0;
                     white-space: nowrap;
                     padding: 5px;
                     font-weight: 300;
                     border-radius: 3px;
                     @include standard-box-shadow;
-                    transition: all .2s;
+                    transition: opacity .2s, transform .2s;
                 }
 
                 &:hover{
                     &:before{
                         opacity: 1;
-                        -webkit-transform: translateY(-10px);
-                        -ms-transform: translateY(-10px);
-                        transform: translateY(-10px);
+                        width: auto;
+                        left: -5px;
+                        -webkit-transform: translateY(-30px);
+                        -ms-transform: translateY(-30px);
+                        transform: translateY(-30px);
                     }
-                }
 
-                &:first-of-type{
-                    &:before{
-                        content: 'View Source';
+                    &:first-of-type{
+                        &:before{
+                            content: 'View Source';
+                        }
+                        
                     }
-                    
-                }
-
-                &:last-of-type{
-                    &:before{
-                        content: 'View Project';
+    
+                    &:last-of-type{
+                        &:before{
+                            content: 'View Project';
+                        }
                     }
                 }
 

@@ -3,6 +3,8 @@
     float: right;
     cursor: pointer;
     padding: 10px 0 0 0;
+    background: none;
+    border: none;
 
     span{
         display: block;
@@ -29,11 +31,11 @@
             }
 
             &:first-of-type{
-                transform: rotate(50deg);    
+                transform: rotate(45deg);    
             }
 
             &:last-of-type{
-                transform: translate(-1px, -4px) rotate(-50deg);    
+                transform: translate(-1px, -4px) rotate(-45deg);    
             }
         }
     }
