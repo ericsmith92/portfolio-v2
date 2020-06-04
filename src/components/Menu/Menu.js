@@ -1,10 +1,14 @@
 import React from 'react';
+import { useLockBodyScroll } from '../hooks';
 
 const Menu = ({open}) => {
+
+        useLockBodyScroll(open);
+
     return(
         <nav className={`menu ${open ? 'open' : ''}`}>
             <a href='/'>
-                Top
+                About
             </a>
             <a href='/'>
                 Work

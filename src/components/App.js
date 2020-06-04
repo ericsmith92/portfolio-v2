@@ -14,7 +14,7 @@ const App = () => {
     useOnClickOutside(node, () => setOpen(false));
 
     return(
-        <div className="container">
+        <div className='container'>
             <div ref={node}>
                 <Menu open={open} />
                 <Header open={open} setOpen={setOpen} />
