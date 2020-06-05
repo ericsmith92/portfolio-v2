@@ -21,11 +21,14 @@ export const useLockBodyScroll = (open) => {
   useLayoutEffect(() => {
    // Get original body overflow
    if(open){
-    const originalStyle = window.getComputedStyle(document.body).overflow; 
+    const scrollBarWidth = window.innerWidth - document.querySelector('body').offsetWidth;
+    const originalStyle = window.getComputedStyle(document.body).overflowY; 
     // Prevent scrolling on mount
-    document.body.style.overflow = 'hidden';
+    document.body.style.paddingRight = scrollBarWidth + 'px';
+    document.body.style.overflowY = 'hidden';
+    console.log(scrollBarWidth);
     // Re-enable scrolling when component unmounts
-   return () => document.body.style.overflow = originalStyle;
+   return () => [document.body.style.overflowY = originalStyle, document.body.style.paddingRight = '0px' ];
    }
    }); // Empty array ensures effect is only run on mount and unmount
 }
