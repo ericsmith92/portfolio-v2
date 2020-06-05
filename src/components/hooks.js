@@ -19,16 +19,26 @@ export const useOnClickOutside = (ref, handler) => {
 
 export const useLockBodyScroll = (open) => {
   useLayoutEffect(() => {
-   // Get original body overflow
    if(open){
     const scrollBarWidth = window.innerWidth - document.querySelector('body').offsetWidth;
     const originalStyle = window.getComputedStyle(document.body).overflowY; 
-    // Prevent scrolling on mount
     document.body.style.paddingRight = scrollBarWidth + 'px';
     document.body.style.overflowY = 'hidden';
-    console.log(scrollBarWidth);
-    // Re-enable scrolling when component unmounts
    return () => [document.body.style.overflowY = originalStyle, document.body.style.paddingRight = '0px' ];
    }
-   }); // Empty array ensures effect is only run on mount and unmount
+   }); 
+}
+
+export const useNavHeighAdjustment = (open) => {
+  useLayoutEffect(() => {
+    const nav = document.querySelector('nav');
+    const bottom = nav.getBoundingClientRect().bottom;
+    const windowHeight = window.innerHeight;
+    
+    if(open && bottom < windowHeight){
+      console.log('fired');
+      nav.style.height  = `calc(100vh + ${windowHeight - bottom}px)`;
+      return () =>  nav.style.height  = '100vh';
+    }
+  });
 }

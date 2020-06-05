@@ -1,9 +1,10 @@
 import React from 'react';
-import { useLockBodyScroll } from '../hooks';
+import { useLockBodyScroll, useNavHeighAdjustment } from '../hooks';
 
 const Menu = ({open}) => {
 
         useLockBodyScroll(open);
+        useNavHeighAdjustment(open);
 
     return(
         <nav className={`menu ${open ? 'open' : ''}`}>

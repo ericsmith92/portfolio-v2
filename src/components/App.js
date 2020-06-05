@@ -16,7 +16,7 @@ const App = () => {
     return(
         <div className='container'>
             <div ref={node}>
-                <Menu open={open} />
+                <Menu open={open} /> 
                 <Header open={open} setOpen={setOpen} />
             </div>
             <Banner />
