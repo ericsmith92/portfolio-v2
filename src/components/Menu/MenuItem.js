@@ -6,7 +6,7 @@ const MenuItem = ({ text, dataValue, setOpen, open}) => {
         e.preventDefault();
         const sect = document.getElementById(e.target.dataset.sect);
         setOpen(!open);
-        sect.scrollIntoView({behavior: "smooth", block: "end", inline: "nearest"});
+        sect.scrollIntoView({behavior: "smooth", block: "center", inline: "nearest"});
     }
 
     return(

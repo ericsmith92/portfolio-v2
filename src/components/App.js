@@ -5,6 +5,7 @@ import Menu from './Menu/Menu';
 import Banner from './Banner/Banner';
 import About from './About';
 import Work from './Work';
+import Contact from './Contact';
 import Footer from './Footer/Footer';
 import '../styles.scss';
 
@@ -22,6 +23,7 @@ const App = () => {
             <Banner />
             <About />
             <Work />
+            <Contact />
             <Footer />
         </div>
     )

@@ -1,0 +1,25 @@
+.contact{
+    margin: 90px 0 60px 0;
+
+    &_btn{
+        display: block;
+        width: 300px;
+        margin: 0 auto;
+        text-align: center;
+        padding: 10px 0;
+        text-decoration: none;
+        text-transform: uppercase;
+        color: #fff;
+        background-color: $green-primary;
+        letter-spacing: 1px;
+        border-radius: 30px;
+        font-weight: 300;
+        @include standard-box-shadow;
+        transition: all 0.5s ease;
+
+        &:hover{
+            box-shadow: none;
+            transform: translateY(-2px);
+        }
+    }
+}
