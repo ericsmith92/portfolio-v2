@@ -1,4 +1,5 @@
 import React from 'react';
+import MenuItem from './MenuItem';
 import { useLockBodyScroll, useNavHeighAdjustment } from '../hooks';
 
 const Menu = ({open, setOpen }) => {
@@ -6,24 +7,11 @@ const Menu = ({open, setOpen }) => {
         useLockBodyScroll(open);
         useNavHeighAdjustment(open);
 
-        const scrollToSect = (e) => {
-            e.preventDefault();
-            const sect = document.getElementById(e.target.dataset.sect);
-            setOpen(!open);
-            sect.scrollIntoView({behavior: "smooth", block: "end", inline: "nearest"});
-        }
-
     return(
         <nav className={`menu ${open ? 'open' : ''}`}>
-            <a onClick={scrollToSect} href='/' data-sect='work'>
-                About
-            </a>
-            <a href='/'>
-                Work
-            </a>
-            <a href='/'>
-                Contact
-            </a>
+            <MenuItem text='About' setOpen={setOpen} open={open} dataValue='about' />
+            <MenuItem text='Work' setOpen={setOpen} open={open} dataValue='work' />
+            <MenuItem text='Contact' setOpen={setOpen} open={open} dataValue='contact' />
         </nav>
     )
 }
