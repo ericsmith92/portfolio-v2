@@ -1,5 +1,5 @@
 .contact{
-    margin: 90px 0 60px 0;
+    margin: 100px 0;
 
     &_btn{
         display: block;
@@ -25,5 +25,11 @@
             color: #fff;
             font-weight: 300;
         }
+    }
+}
+
+@media all and (min-width: 1030px){
+    .contact {
+        margin: 130px 0;
     }
 }
