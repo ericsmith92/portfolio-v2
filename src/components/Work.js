@@ -5,6 +5,7 @@ const Work = () => {
     return (
         <section className='work' id='work'>
             <div className="work_inner">
+                <h2 className="heading_secondary heading_secondary__decorated"><span>Recent</span><span>Work</span></h2>
                 <div className="row">
                     <div className="col-1-of-3">
                         <Card 
@@ -18,7 +19,7 @@ const Work = () => {
                     </div>
                     <div className="col-1-of-3">
                         <Card 
-                            src='/images//instapaper-banner.png'  
+                            src='/images/instapaper-banner.png'  
                             title='Instapaper' 
                             description='Rearrange and stitch together recent posts from an Instagram account to make a wallpaper.'
                             accomplishments={['Web scraping with a Node JS backend', 'Dependency free vanilla JavaScript front-end', 'Image writing, resizing, and stitching on the fly']}

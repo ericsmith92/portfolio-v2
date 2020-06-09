@@ -30,7 +30,34 @@ html{
         letter-spacing: 0.384px;
         line-height: normal;
         text-transform: none;
-        color: $heading_colour
+        color: $heading_colour;
+
+        &__decorated{
+            display: inline-block;
+            position: absolute;
+            top: -110px;
+            left: 30px;
+            font-weight: 700;
+            -webkit-transform: rotate(-10deg) skew(-10deg, 0);
+            -moz-transform: rotate(-10deg) skew(-10deg, 0);
+            -ms-transform: rotate(-10deg) skew(-10deg, 0);
+            -o-transform: rotate(-10deg) skew(-10deg, 0);
+            transform: rotate(-10deg) skew(-10deg, 0);    
+            
+
+            span{
+                display: inline-block;
+                color: $heading_colour;
+                background-color: rgba(255, 255, 255, 0.7);
+                padding: 5px 10px;
+                border: 1px solid $heading_colour;
+
+                &:first-of-type{
+                    display: block;
+                    margin: 0 0 2.5px 0;
+                }
+            }
+        }
     }
 
     &_tertiary{
@@ -58,4 +85,23 @@ p{
 
 a{
     color: $text_colour
+}
+
+@media all and (min-width: 600px){
+    .heading_secondary__decorated{
+        left: -30px;
+    }
+}
+
+@media all and (min-width: 768px){
+    .heading_secondary__decorated{
+        top: -80px;
+    }
+}
+
+@media all and (min-width: 1030px){
+    .heading_secondary__decorated{
+        top: -150px;
+        left: 30px;
+    }
 }
