@@ -3,9 +3,9 @@
     background-size: cover;
     min-height: 500px;
     position: relative;
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
-    -moz-clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
-    clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 98%, 0 100%);
+    -moz-clip-path: polygon(0 0, 100% 0, 100% 98%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 98%, 0 100%);
 
     &_inner{
         @include absolute-center;
@@ -59,3 +59,28 @@
         z-index: 1;
     }
 }
+
+@media all and (min-width: 768px){
+    .banner{
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 96%, 0 100%);
+        -moz-clip-path: polygon(0 0, 100% 0, 100% 96%, 0 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 96%, 0 100%);
+    }
+}
+
+@media all and (min-width: 1030px){
+    .banner{
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 93%, 0 100%);
+        -moz-clip-path: polygon(0 0, 100% 0, 100% 93%, 0 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 93%, 0 100%);
+    }
+}
+
+@media all and (min-width: 1240px){
+    .banner{
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+        -moz-clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+    }
+}
+
