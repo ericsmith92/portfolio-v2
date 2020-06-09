@@ -1,16 +1,10 @@
 import React from 'react';
+import { scrollToSect } from '../hooks';
 
 const MenuItem = ({ text, dataValue, setOpen, open}) => {
 
-    const scrollToSect = (e) => {
-        e.preventDefault();
-        const sect = document.getElementById(e.target.dataset.sect);
-        setOpen(!open);
-        sect.scrollIntoView({behavior: "smooth", block: "center", inline: "nearest"});
-    }
-
     return(
-        <a href='/' onClick={scrollToSect} data-sect={dataValue}>{text}</a>
+        <a href='/' onClick={(e) => scrollToSect(e, open, setOpen)} data-sect={dataValue}>{text}</a>
     )  
 }
 

@@ -25,7 +25,7 @@ class Banner extends React.Component{
                 <div className="banner_inner">
                     {this.state.me ? <BannerImg src={this.state.me.avatar_url}/> : ''}
                     {this.state.me ? <BannerBio text={this.state.me.bio}/> : ''}
-                    <BannerAnchor />
+                    <BannerAnchor dataValue='work'/>
                 </div>
             </div>
         )

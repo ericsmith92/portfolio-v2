@@ -20,7 +20,7 @@ const App = () => {
                 <Menu open={open} setOpen={setOpen}/> 
                 <Header open={open} setOpen={setOpen} />
             </div>
-            <Banner />
+            <Banner/>
             <About />
             <Work />
             <Contact />

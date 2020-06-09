@@ -42,3 +42,12 @@ export const useNavHeighAdjustment = (open) => {
     }
   });
 }
+
+export const scrollToSect = (e, open, setOpen) => {
+  e.preventDefault();
+  const sect = document.getElementById(e.target.dataset.sect);
+  if(open){
+    setOpen(!open);
+  }
+  sect.scrollIntoView({behavior: "smooth", block: "center", inline: "nearest"});
+}
