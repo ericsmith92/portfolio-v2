@@ -36,9 +36,25 @@ export const useNavHeighAdjustment = (open) => {
     const windowHeight = window.innerHeight;
     
     if(open && bottom < windowHeight){
-      console.log('fired');
       nav.style.height  = `calc(100vh + ${windowHeight - bottom}px)`;
       return () =>  nav.style.height  = '100vh';
+    }
+  });
+}
+
+export const useNavButtonMarginAdjustment = (open) => {
+  useLayoutEffect(() => {
+    if(open){
+      const btn = document.querySelector('.burger');
+      const top = btn.getBoundingClientRect().top;
+      const originalStyle = window.getComputedStyle(btn).marginTop;
+
+      if(Math.sign(top) < 0){
+        console.log(top);
+        btn.style.marginTop = `${parseInt(originalStyle.split('px')[0]) + Math.abs(top) + 10}px`;
+      }
+
+      return () =>  btn.style.marginTop  = originalStyle;
     }
   });
 }
