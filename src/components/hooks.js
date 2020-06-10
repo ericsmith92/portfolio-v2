@@ -50,7 +50,6 @@ export const useNavButtonMarginAdjustment = (open) => {
       const originalStyle = window.getComputedStyle(btn).marginTop;
 
       if(Math.sign(top) < 0){
-        console.log(top);
         btn.style.marginTop = `${parseInt(originalStyle.split('px')[0]) + Math.abs(top) + 10}px`;
       }
 
