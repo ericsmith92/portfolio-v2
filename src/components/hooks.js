@@ -60,9 +60,14 @@ export const useNavButtonMarginAdjustment = (open) => {
 
 export const scrollToSect = (e, open, setOpen) => {
   e.preventDefault();
-  const sect = document.getElementById(e.target.dataset.sect);
+  const sectTop = document.getElementById(e.target.dataset.sect).getBoundingClientRect().top;
   if(open){
     setOpen(!open);
   }
-  sect.scrollIntoView({behavior: "smooth", block: "center", inline: "nearest"});
+  //sect.scrollIntoView({behavior: "smooth", block: "center", inline: "nearest"});
+  window.scrollTo({
+    top: sectTop,
+    left: 0,
+    behavior: 'smooth'
+  });
 }

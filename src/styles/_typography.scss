@@ -19,7 +19,11 @@ html{
         letter-spacing: 0.64px;
         line-height: 38.4px;
         text-transform: none;
-        color: $heading_colour
+        color: $heading_colour;
+
+        .break{
+            display: block;
+        }
     }
     
     //sub heading
@@ -88,9 +92,20 @@ a{
 }
 
 @media all and (min-width: 600px){
-    .heading_secondary__decorated{
-        left: -30px;
+    .heading{
+
+        &_main {
+            .break{
+                display: inline;
+            }
+        }
+
+        &_secondary__decorated{
+            left: -30px;
+        }
     }
+    
+    
 }
 
 @media all and (min-width: 768px){
