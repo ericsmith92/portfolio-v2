@@ -1,4 +1,5 @@
 import { useEffect, useLayoutEffect } from 'react';
+import smoothscroll from 'smoothscroll-polyfill';
 
 export const useOnClickOutside = (ref, handler) => {
   useEffect(() => {
@@ -60,13 +61,15 @@ export const useNavButtonMarginAdjustment = (open) => {
 
 export const scrollToSect = (e, open, setOpen) => {
   e.preventDefault();
+  smoothscroll.polyfill();
   const sectTop = document.getElementById(e.target.dataset.sect).getBoundingClientRect().top;
+  
   if(open){
     setOpen(!open);
   }
-  //sect.scrollIntoView({behavior: "smooth", block: "center", inline: "nearest"});
+
   window.scrollTo({
-    top: sectTop,
+    top: sectTop - 30,
     left: 0,
     behavior: 'smooth'
   });
