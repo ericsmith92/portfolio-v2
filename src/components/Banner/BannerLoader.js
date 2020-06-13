@@ -2,7 +2,7 @@ import React from 'react';
 
 const BannerLoader = () => {
     return(
-        <div class="loader">Loading...</div>
+        <div class="banner_loader">Loading...</div>
     )
 }
 
