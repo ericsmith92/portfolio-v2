@@ -9,7 +9,7 @@ const Work = () => {
                 <div className="row">
                     <div className="col-1-of-3">
                         <Card 
-                            src='/images/covid-19-banner.png' 
+                            src='/portfolio-v2/images/covid-19-banner.png' 
                             title='Covid-19 Tracker' 
                             description='Interact with countries on a map to retrieve Covid-19 data.'
                             accomplishments={['JAMstack project with React front-end', 'Error handling and displaying using React Portals', 'Dusted off some highschool math to derive lat and long from an XY coordinate on mouseclick']}
@@ -19,7 +19,7 @@ const Work = () => {
                     </div>
                     <div className="col-1-of-3">
                         <Card 
-                            src='/images/instapaper-banner.png'  
+                            src='/portfolio-v2/images/instapaper-banner.png'  
                             title='Instapaper' 
                             description='Rearrange and stitch together recent posts from an Instagram account to make a wallpaper.'
                             accomplishments={['Web scraping with a Node JS backend', 'Dependency free vanilla JavaScript front-end', 'Image writing, resizing, and stitching on the fly']}
@@ -29,7 +29,7 @@ const Work = () => {
                     </div>
                     <div className="col-1-of-3">
                         <Card 
-                            src='/images/instapaper-search.png' 
+                            src='/portfolio-v2/images/instapaper-search.png' 
                             title='Project 3' 
                             description='Lorem ipsum dolor sit amet, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
                             accomplishments={['Lorem ipsum dolor sit amet', 'sed do eiusmod tempor incididunt ut labore', ' incididunt ut labore et dolore magna aliqua']}/>
