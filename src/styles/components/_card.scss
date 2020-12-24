@@ -123,6 +123,7 @@
                     display: block;
                     width: 0;
                     opacity: 0;
+                    overflow: hidden;
                     position: absolute;
                     font-size: 12px;
                     color: #fff;
@@ -137,6 +138,19 @@
                     transition: opacity .2s, transform .2s;
                 }
 
+                &:first-of-type{
+                    &:before{
+                        content: 'View Source';
+                    }
+                    
+                }
+
+                &:last-of-type{
+                    &:before{
+                        content: 'View Project';
+                    }
+                }
+
                 &:hover{
                     &:before{
                         opacity: 1;
@@ -147,6 +161,7 @@
                         transform: translateY(-30px);
                     }
 
+                    /*
                     &:first-of-type{
                         &:before{
                             content: 'View Source';
@@ -159,6 +174,7 @@
                             content: 'View Project';
                         }
                     }
+                    */
                 }
 
                 &:not(:last-of-type){

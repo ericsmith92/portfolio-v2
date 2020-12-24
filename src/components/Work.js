@@ -21,10 +21,10 @@ const Work = () => {
                         <Card 
                             src='/portfolio-v2/images/instapaper-banner.png'  
                             title='Instapaper' 
-                            description='Rearrange and stitch together recent posts from an Instagram account to make a wallpaper.'
-                            accomplishments={['Web scraping with a Node JS backend', 'Dependency free vanilla JavaScript front-end', 'Image writing, resizing, and stitching on the fly']}
-                            githubURL='https://github.com/ericsmith92/instapaper'
-                            projectURL='http://whispering-chamber-94643.herokuapp.com/'
+                            description='Rearrange and stitch together random photos from a search term to make a wallpaper.'
+                            accomplishments={['Node JS Express backend', 'PUG templating engine used on the front-end', 'Image writing, resizing, and stitching on the fly. Images can be rearranged on the front-end to change the order']}
+                            githubURL='https://github.com/ericsmith92/collage-maker'
+                            projectURL='http://instapapier.herokuapp.com/'
                             />
                     </div>
                     <div className="col-1-of-3">
