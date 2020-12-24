@@ -22,7 +22,7 @@ const Work = () => {
                             src='/portfolio-v2/images/instapaper-banner.png'  
                             title='Instapaper' 
                             description='Rearrange and stitch together random photos from a search term to make a wallpaper.'
-                            accomplishments={['Node JS Express backend', 'PUG templating engine used on the front-end', 'Image writing, resizing, and stitching on the fly. Images can be rearranged on the front-end to change the order']}
+                            accomplishments={['Node JS Express backend', 'PUG templating engine used on the front-end', 'Images retrieved using the Unsplash API', 'Image writing, resizing, and stitching on the fly. Images can be rearranged on the front-end to change the order']}
                             githubURL='https://github.com/ericsmith92/collage-maker'
                             projectURL='http://instapapier.herokuapp.com/'
                             />
