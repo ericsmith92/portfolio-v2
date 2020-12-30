@@ -14,7 +14,7 @@ const FooterSocial = () => {
                 </a>
             </li>
             <li>
-                <a target="_blank" rel="noopener noreferrer" href="http://helloericsmith.com/resume.pdf">
+                <a target="_blank" rel="noopener noreferrer" href="https://drive.google.com/file/d/1jEuoDuCtq8BvN38TAGeL6udGGIevEFXd/view?usp=sharing">
                     <i className="fa fa-file-text" aria-hidden="true"></i>
                 </a>
             </li>
