@@ -32,7 +32,7 @@ const Work = () => {
                             src='/portfolio-v2/images/medium-banner.png' 
                             title='Medium Article' 
                             description='A Medium Article authored by me exploring some algorithms in JavaScript'
-                            accomplishments={['Got my first taste of writing technical documentation', 'used a combination of GitHub Gists and writing explanations to both demonstrate and expand upon solutions', 'linked out to other resources I generally use in my problem solving workflow']}
+                            accomplishments={['Got my first taste of writing technical documentation', 'used a combination of GitHub Gists and written explanations to demonstrate and expand upon solutions', 'linked out to other resources I generally use in my problem solving workflow']}
                             githubURL='https://gist.github.com/ericsmith92'
                             projectURL='https://ericsmth884.medium.com/the-easiest-way-to-build-cooler-things-with-javascript-fe74eabfe48b'
                             />
