@@ -10,7 +10,7 @@ const Header = ({open, setOpen}) => {
 
     return(
         <header>
-            <a className="logo" href="/">
+            <a className="logo" href="/portfolio-v2">
                 ES
             </a>
             <div className="menu_container" ref={node}>
