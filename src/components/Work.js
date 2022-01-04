@@ -9,6 +9,16 @@ const Work = () => {
                 <div className="row">
                     <div className="col-1-of-3">
                         <Card 
+                            src='/portfolio-v2/images/harness-inspection-cover.png' 
+                            title='Harness Inspection App' 
+                            description='A fullstack app that guides you through a safety harness inspection that I worked on with another developer.'
+                            accomplishments={['Authored a custom WordPress plugin to register custom post types, allowing for querying and creation of custom post type data via GraphQL', 'Built an interactive React SVG component that guides a user through each harness point needing inspection', 'Sign Up for free and test it out!']}
+                            githubURL='https://github.com/harness-software/harness-inspection'
+                            projectURL='https://inspections.harnessup.com/harness-inspection/register'
+                        />
+                    </div>
+                    <div className="col-1-of-3">
+                        <Card 
                             src='/portfolio-v2/images/covid-19-banner.png' 
                             title='Covid-19 Tracker' 
                             description='Interact with countries on a map to retrieve Covid-19 data.'
@@ -25,16 +35,6 @@ const Work = () => {
                             accomplishments={['Node JS Express backend', 'PUG templating engine used on the front-end', 'Images retrieved using the Unsplash API', 'Image writing, resizing, and stitching on the fly. Images can be rearranged on the front-end to change the order']}
                             githubURL='https://github.com/ericsmith92/collage-maker'
                             projectURL='http://instapapier.herokuapp.com/'
-                            />
-                    </div>
-                    <div className="col-1-of-3">
-                        <Card 
-                            src='/portfolio-v2/images/medium-banner.png' 
-                            title='Medium Article' 
-                            description='A Medium Article authored by me exploring some algorithms in JavaScript'
-                            accomplishments={['Got my first taste of writing technical documentation', 'used a combination of GitHub Gists and written explanations to demonstrate and expand upon solutions', 'linked out to other resources I generally use in my problem solving workflow']}
-                            githubURL='https://gist.github.com/ericsmith92'
-                            projectURL='https://ericsmth884.medium.com/the-easiest-way-to-build-cooler-things-with-javascript-fe74eabfe48b'
                             />
                     </div>
                 </div>

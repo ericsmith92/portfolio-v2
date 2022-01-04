@@ -2,7 +2,7 @@ import React from 'react';
 import Highlighter from "react-highlight-words";
 
 const CardReveal = ({ toggleCardState, accomplishments,  githubURL, projectURL }) => {
-    const keyWords = ['Node', 'Node JS', 'JavaScript', 'JAMstack', 'React', 'stitching', 'PUG', 'Express', 'Unsplash API', 'technical documentation'];
+    const keyWords = ['Node', 'Node JS', 'JavaScript', 'JAMstack', 'React', 'stitching', 'PUG', 'Express', 'Unsplash API', 'technical documentation', 'WordPress', 'WPGraphQL', 'GraphQL'];
     const accomplishmentsList = accomplishments.map((text, index) => <li key={index}>
                                                                         <Highlighter
                                                                             highlightClassName="card_reveal__mark"
