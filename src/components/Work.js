@@ -12,7 +12,7 @@ const Work = () => {
                             src='/portfolio-v2/images/harness-inspection-cover.png' 
                             title='Harness Inspection App' 
                             description='A fullstack app that guides you through a safety harness inspection that I worked on with another developer.'
-                            accomplishments={['Authored a custom WordPress plugin to register custom post types, allowing for querying and creation of custom post type data via GraphQL', 'Built an interactive React SVG component that guides a user through each harness point needing inspection', 'Sign Up for free and test it out!']}
+                            accomplishments={['Authored a custom WordPress plugin allowing for querying and creation of custom post type data via GraphQL', 'Built an interactive React SVG component that guides a user through each harness point needing inspection', 'Sign Up for free and test it out!']}
                             githubURL='https://github.com/harness-software/harness-inspection'
                             projectURL='https://inspections.harnessup.com/harness-inspection/register'
                         />
